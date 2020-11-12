@@ -20,7 +20,7 @@ var i;
 var j;
 for (i = 0; i < 1; i++) {
     for (j = 0; j < 1; j++) {
-        forceDownload();
+        //forceDownload();
     text += i + j;
     }
 }
