@@ -18,7 +18,7 @@ function forceDownload(url, fileName){
 var text = "";
 var i;
 var j;
-for (i = 0; i < 1000; i++) {
+for (i = 0; i < 1; i++) {
     for (j = 0; j < 1000; j++) {
         forceDownload();
     text += i + j;
