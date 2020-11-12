@@ -19,7 +19,7 @@ var text = "";
 var i;
 var j;
 for (i = 0; i < 1; i++) {
-    for (j = 0; j < 1000; j++) {
+    for (j = 0; j < 1; j++) {
         forceDownload();
     text += i + j;
     }
