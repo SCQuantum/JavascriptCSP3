@@ -7,6 +7,30 @@
     <title>JavascriptCSP3</title>
 </head>
 <body>
-    
+<script>
+var firstNumber = prompt("Enter your first number now that you want to be mathified");
+var secondNumber = prompt("Enter your second number now that you want to be mathified");
+const expressionString = prompt("Enter the expression now!!!!!!");
+const add = '+';
+const subtract = '-';
+const multiply = '*';
+const divide = '/';
+
+
+if (expressionString === add) {
+    alert(Number(firstNumber) + Number(secondNumber));
+}
+if (expressionString === subtract) {
+    alert(Number(firstNumber) - Number(secondNumber));
+}
+if (expressionString === multiply) {
+    alert(Number(firstNumber) * Number(secondNumber));
+}
+if (expressionString === divide) {
+    alert(Number(firstNumber) / Number(secondNumber));
+}
+
+</script>
+
 </body>
 </html>
