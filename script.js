@@ -1,27 +1,22 @@
-function forceDownload(url, fileName){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.responseType = "blob";
-    xhr.onload = function(){
-        var urlCreator = window.URL || window.webkitURL;
-        var imageUrl = urlCreator.createObjectURL(this.response);
-        var tag = document.createElement('a');
-        tag.href = imageUrl;
-        tag.download = fileName;
-        document.body.appendChild(tag);
-        tag.click();
-        document.body.removeChild(tag);
-    }
-    xhr.send();
-}
+// using this array,
+// var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+// 1. Remove the Banana from the array.
+var array = ["Apples", "Oranges", "Blueberries"];
+// 2. Sort the array in order.
+var array = ["Apples", "Blueberries", "Oranges"];
+// 3. Put "Kiwi" at the end of the array.
+var array = ["Apples", "Blueberries", "Oranges", "Kiwi"];
+// 4. Remove "Apples" from the array.
+var array = ["Blueberries", "Oranges", "Kiwi"];
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse
+// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+var array = ["Kiwi", "Oranges", "Blueberries"];
+//you should have at the end:
+//["Kiwi", "Oranges", "Blueberries"]
 
-var text = "";
-var i;
-var j;
-for (i = 0; i < 10; i++) {
-    for (j = 0; j < 100; j++) {
-        forceDownload();
-    text += i + j;
-    }
-}
-document.getElementById("demo").innerHTML = text;
+// using this array,
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// access "Oranges".
+var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+array2[1][1];
